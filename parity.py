@@ -24,7 +24,7 @@
   #   print("Even")
  #else:
   #   print("Odd")
-# another way of using function
+# shorter way of using function
 def main():
     x = int(input("What's x?"))
     if is_even(x):

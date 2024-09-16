@@ -1,3 +1,4 @@
+#  Testing again
 #i = 3
 #while i != 0:
  #   print("meow") 
@@ -17,19 +18,19 @@
 #for _ in range(n):
  #   print("meow")
   #loop with function
-def main():
-    number = get_number()
-    meow(number)
+#def main():
+  #  number = get_number()
+ #   meow(number)
 
-def get_number():
-    while True:
-        n = int(input("what's n?"))
-        if n > 0:
-            break
-        return n
+#def get_number():
+    #while True:
+    #    n = int(input("what's n?"))
+   #     if n > 0:
+  #          break
+ #       return n
 
-def meow(n): 
-    for _ in range(n):
-        print("meow") 
+#def meow(n): 
+  #  for _ in range(n):
+ #       print("meow") 
 
-main() 
+#main() 
