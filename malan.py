@@ -1,7 +1,6 @@
-names = []
+x = float(input("What's x? "))
+y = float(input("What's y? "))
 
-for _ in range(3):
-    names.append(input("what's your name? "))
+z = round(x + y)
 
-for name in sorted(names):
-    print(f"hello", {name})
+print(f"{z:,}")  
