@@ -23,7 +23,7 @@
 # def square(n):
 #     return pow(n,2)
 # main()
-# LIST COPREHENSION
+# LIST COMPREHENSION
 # fruits = ["apples","bananas","strawberries"]
 # new_fruits = []
 # for fruit in fruits:
@@ -32,7 +32,18 @@
 
 #     fruits = new_fruits
 #     print(fruits)
-fruits = ["apples","bananas","strawberries"]
-fruits = [fruit.upper() for fruit in fruits]
+# fruits = ["apples","bananas","strawberries"]
+# fruits = [fruit.upper() for fruit in fruits]
 
-print(fruits)
+# print(fruits)
+
+line01 = "********************"
+line02 = "*                  *"
+line03 = "*      WELCOME!    *"
+print('')
+print(line01)
+print(line02)
+print(line03)
+print(line02)
+print(line01)
+

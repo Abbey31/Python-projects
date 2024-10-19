@@ -1,15 +1,16 @@
 from math import pi
 import sys
-import random as musa
+import random as sheu
 from enum import Enum
-from my_rough_work import rock_paper_scissors
+from rps7 import rock_paper_scissors
+from banking_program import main
+from contact import main
 
-print(pi)
+#print(pi)
 
-for item in dir(musa):
-    print(item)
+#for item in dir(sheu):
+ #   print(item)
 
 rock_paper_scissors()
-
-#print(kansas.capital)
-#kansas.randomfunfact()
+main()
+main()
