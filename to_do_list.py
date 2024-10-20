@@ -17,6 +17,11 @@ def add_tasks():
 
 def mark_task_as_complete():
      pass
+def view_all_tasks():
+     for task,due_date in prior_and_due.items():
+         task [tasks] = prior_and_due
+
+
 
 def remove_task():
      task_name = input("type the name of the task you want to delete!: ")
@@ -27,10 +32,12 @@ def remove_task():
          del prior_and_due[task_name]
          print(f"{task_name} deleted successfully")
 while True:
-    task_name = input("\nPress 1 to add a new task:\n2 to delete a task:\n 3 to mark as complete: ")
+    task_name = input("\nPress 1 to add a new task:\n2 to delete a task:\n 3 to view all tasks \n 4 to mark as complete: ")
     if task_name == '1':
         add_tasks()
     elif task_name == '2':
          remove_task()
-else:
+    elif task_name == "3":
+        view_all_tasks()
+    else:
         print("Enter 1, 2 or 3")
