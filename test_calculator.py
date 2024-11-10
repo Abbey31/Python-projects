@@ -1,28 +1,11 @@
-import unittest
+from calculator import square
 
-from calculator import calculator
-
-
-class TestCalculator(unittest.TestCase):
-
-    def setUp(self):
-        self.calculator = Calculator()
-
-    def test_add_numbers_returns_sum(self):
-        result = self.calculator.add(20,60)
-        self.assertEqual(20 + 60, result)
-
-        result = self.calculator.add(20.56, 60.89)
-        self.assertEqual(20.56 + 60.89, result)
-
-    def test_add_non_numbers_raises_type_error(self):
-        self.assertRaises(TypeError, self.calculator.add, "Hello","World")
-        self.assertRaises(TypeError, self.calculator.add,20, "world")
-        self.assertRaises(TypeError, self.calculator.add,"Hello",20)
-        self.assertRaises(TypeError, self.calculator.add, "60.10.29.3", 20)
-
-    def test_add_string_numbers_returns_sum(self):
-        result = self.calculator.add("50", "60.7")
-        self.assertEqual(50 + 60.7, result)
-
-
+def test_positive():
+        assert square(2) == 4
+        assert square(3) == 9
+def test_negative():
+        assert square(-2) == 4
+        assert square(-3) == 9
+def test_zero():
+        assert square(0) == 0
+    

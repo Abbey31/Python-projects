@@ -1,21 +1,11 @@
-# # def hello(to):
-# #     print("hello,", to)
+def main():
+    name = input("What's your name?")
+    print(hello(name))
 
 
-# # name = input("What's your name?")
-# # hello(name)
+def hello(to="world"):
+    return f"hello, {to}"
 
 
-# my_name:str = "Musa"
-# print(type(my_name))
-# print(my_name)
-import keyword
-print(keyword.kwlist)
-
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    main()

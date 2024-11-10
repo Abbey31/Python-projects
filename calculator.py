@@ -1,13 +1,9 @@
-class calculator:
+def main():
+    x = int(input("What's x? "))
+    print("x squared is",square(x))
 
-    def add(self, x, y):
-        pass
+def square(n):
+    return n * n
 
-    def subtract(self, x, y):
-        pass
-
-    def multiply(self, x, y):
-        pass
-
-    def divide(self, x, y):
-        pass 
+if __name__ == "__main__":
+    main()

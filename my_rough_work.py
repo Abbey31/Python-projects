@@ -507,11 +507,12 @@
 # tommmy = parent_function("Tommy")
 # tommmy = parent_function("Timmy")
 
+# ROCK_PAPER_SCISSORS 5 WITH CLOSURE
 # import sys
 # import random
 # from enum import Enum
 
-# ROCK_PAPER_SCISSORS 5 WITH CLOSURE
+#
 
 # def rps():
 #     game_count = 0
@@ -955,3 +956,160 @@ import sys
 
 #     rock_paper_scissors = rps(args.name)
 #     rock_paper_scissors()
+#LAMBDA
+#squared = lambda num : num * num 
+
+#print(squared(2))
+
+
+#addTwo = lambda num : num + 2
+
+#print(addTwo(12))
+
+#sum = lambda a, b : a + b
+
+#print(sum(2,5))
+
+
+# def funcBuilder(x):
+#     return lambda num : num + x
+
+# addTen = funcBuilder(10)
+# addTwenty = funcBuilder(20)
+
+# print(addTen(7))
+# print(addTwenty(7))
+
+
+# numbers = [3,7,12,18,20,21]
+# squared_nums = map(lambda num: num * num,numbers) 
+# print(list(squared_nums))
+# numbers = [3,7,12,18,20,21]
+# odd_nums = filter(lambda num : num % 2 != 0,numbers)
+# print(list(odd_nums))
+# from functools import reduce
+
+# lambda acc, curr: acc + curr
+
+# numbers = [1,2,3,4,5,1]
+
+# total = reduce(lambda acc, curr: acc + curr,numbers)
+# print(total)
+
+# lambda acc, curr : acc + len(curr)
+
+# names = ['Dave Gray','Sara Ito','John Jacob Jingleheimerschmidt']
+
+
+# char_count = reduce(lambda acc, curr : acc + len(curr), names,0)
+
+# print(char_count)
+# CLASSES AND OBJECTS
+# class Vehicle:
+#     def __init__(self,make,model):
+#         self.make = make
+#         self.model = model
+
+
+#     def moves(self):
+#         print('Moves along...')
+
+#     def get_make_model(self):
+#         print(f"I'm a {self.make} {self.model}.")
+
+# my_car = Vehicle('Mustang','Model 3')
+
+# my_car.get_make_model()
+
+# my_car.moves()
+
+# your_car = Vehicle('Cadillac','Escalade')
+# your_car.get_make_model()
+# your_car.moves()
+#INHERITANCE
+# class Airplane(Vehicle):
+#     def __init__(self,make,model,faa_id):
+#         super().__init__(make,model)
+#         self.faa_id = faa_id
+
+#     def moves(self):
+#         print('Flies along..')
+
+# class Truck(Vehicle):
+#     def moves(self):
+#         print('Rumbles along..')
+
+# class GolfCart(Vehicle):
+#     pass
+
+# cessna = Airplane('Cessna','Skyhawk','KL22')
+# mack = Truck('Mack','Pinnacle')
+# golfwagon = GolfCart('Yamaha','GC100')
+
+# cessna.get_make_model()
+# cessna.moves()
+# mack.get_make_model()
+# mack.moves()
+# golfwagon.get_make_model()
+# golfwagon.moves()
+
+# print('\n\n')
+#POLYMORPHISM
+
+# for v in (my_car,your_car, cessna,mack, golfwagon):
+#     v.get_make_model()
+#     v.moves()
+
+# EXCEPTIOND AND ERRORS
+# class JustNotCoolError(Exception):
+#     pass
+
+# x = 2
+# try:
+#     raise JustNotCoolError("This ain't cool man.")
+    # raise Exception("I'm a custom exception!")
+    #print(x/0)
+    # if not type(x) is str:
+    #     raise TypeError("Only strings are allowed.")
+# except NameError:
+#     print('Something is undefined')
+# except ZeroDivisionError:
+#     print('Please do not divide by zero')
+# except Exception as error:
+#     print(error)
+
+# else:
+#     print('No Errors')
+# finally:
+#     print("I'm going to print with or without an error.")
+#FILE OPERATIONS
+# r = Read
+# a = append
+# w = write
+# x = Create
+#f = open("names.txt")
+#print(f.read())
+#print(f.read(4))
+#READ
+#print(f.readline())
+
+# for line in f:
+#     print(line)
+
+# f.close()
+
+# try:
+#     f = open("name_list.txt")
+#     print(f.read())
+# except:
+#     print("The file you want to read doesn't exist")
+# finally:
+#     f.close() 
+#APPEND
+f = open("names.txt","a")
+f.write("Neil")
+f.close()
+
+f = open("names.txt")
+f.read()
+f.close()

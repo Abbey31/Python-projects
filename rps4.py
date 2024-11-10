@@ -32,15 +32,15 @@ def play_rps():
     def decide_winner(player,computer):
     
         if player == 1 and computer == 3:
-            return 'You Win!'
+            return 'You Win!🎉'
         elif player == 2 and computer == 3:
-            return "You Win!"
+            return "You Win!🎉"
         elif player == 3 and computer == 2:
-            return "You Win!"
+            return "You Win!🎉"
         elif computer == player:
-            return "Tie Game!"
+            return "Tie Game!👔"
         else:
-            return "Python Wins!"
+            return "Python Wins!🐍"
         
     game_result = decide_winner(player,computer) 
     print(game_result)
