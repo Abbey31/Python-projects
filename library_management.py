@@ -1,50 +1,56 @@
 class Library:
-    def __init__(self,books,members):
-        self.books = books
-        self.members = members
+    def __init__(self,members,books):
+        self.books = []
+        self.members = []
 
-
-
-class Book:
-    def __init__(self,title,author,isbn,is_available):
+class Book(Library):
+    def __init__(self,title,author):
         self.title = title
         self.author = author
-        self.isbn = isbn
-        self.is_available = False
-
-    def borrow(Book):
-        books = {}
-        for title,author in books.items():
-            print(f"{title}:{author}")
-
-    def read_book():
-        pass 
-
-class Members:
-    def __init__(self,membership_id,check_out):
-        self.membership_id = membership_id
-        self.check_out = check_out
-
-    def add_new_member():
-        user_id = {}
-        name = input("Name: ")
         
-        if name in user_id:
-            print("user already exixts")
-        else:
-            age = input("Age: ")
-            user_id[name] = age
-            print("new member:{name} with age :{age} added successfully")
+    def borrow_book(self):
+        for book in self.books:
+            print(f"{book} borrowed")
 
-    def remove_member():
-        user_id = []
-        name = input("name: ")
-        if name not in user_id:
-            print("Not Found")
-        else:
-            age = input("age: ")
-            del(user_id[name,age])
+    def add_book(self,book):
+        for book in self.books:
+            self.books.append(book)
+            print(f"new {book} added")
+    def remove_book(self):
+        for book in self.books:
+            del[book]
+            print(f"{book} deleted")
 
-    def check_in():
-        pass
+    def list_books(self):
+        return[self.books for book in self.books]
+
+class Members(Library):
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age   
+
+    def add_new_member(self,name,age):
+        self.name = name
+        self.age = age
+        
+    
+        member = input("Name: "),input("Age:")
+        self.members.append(member)
+        return f"{member}"
+        
+
+    def remove_member(self):
+        
+        member = input("name: "),input("Age: ")
+
+        del([member])
+        print(f"member{member} deleted")
+
+# new = Members()
+# new.add_new_member("Sheu",11)
+iwe = Book("money","eru")
+iwe.list_books()
+#print(new.add_new_member())
+
+    
             
